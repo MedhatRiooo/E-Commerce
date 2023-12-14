@@ -1,0 +1,201 @@
+body {
+    background-color: #2a2a2a; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.navbar {
+    background-color: #9400d3; /* Violet navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2a2a2a; /* White nav links */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #ffffff; /* White navbar toggler icon */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #9400d3; /* Violet heading */
+}
+
+.card {
+    background-color: #2a2a2a; /* Black card background */
+    color: #ffffff; /* White card text */
+}
+
+/* Add this to your existing style.css file */
+
+.card-deck {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to display cards in a row */
+    justify-content: space-around;
+}
+
+.card {
+    flex: 1; /* Distribute available space equally among cards */
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    max-height: 200px; /* Limit the maximum height of the image */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #9400d3; /* Violet card title */
+}
+
+.card-text {
+    color: #aaaaaa; /* Light gray card text */
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background-color: #9400d3 !important; /* Violet button */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #7a00a8 !important; /* Dark violet button on hover */
+}
+
+.table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #2a2a2a; /* Black table background */
+    color: #ffffff; /* White table text */
+}
+
+th {
+    background-color: #9400d3; /* Violet header background */
+    color: #fff; /* White header text */
+}
+
+.img-preview {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.btn-warning,
+.btn-danger,
+.btn-success {
+    margin-right: 5px;
+}
+
+.form-label {
+    color: #9400d3; /* Green form label text color */
+}
+
+.form-control {
+    background-color: #2a2a2a; /* Black form control background */
+    color: #ffffff; /* White form control text */
+    border: 1px solid #ddd; /* Gray border */
+}
+
+.btn-success {
+    background-color: #9400d3; /* Green button for add product */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #60008a;
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Yellow button for edit product */
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red button for delete product */
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Styles specific to the "Manage Orders" page */
+#updateOrderStatusModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* End of styles specific to the "Manage Orders" page */
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a2a2a; /* Black footer background */
+    color: #ffffff; /* White footer text */
+    text-align: center;
+    padding: 10px;
+}
+
